@@ -1,0 +1,6 @@
+Dear ${PERSON_NAME}, 
+
+Your Assassins target is ${TARGET_NAME}. <Enter whatever external info you want here>
+
+Best,
+name
