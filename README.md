@@ -4,7 +4,7 @@ A simple python script that automates emailing people their targets (random) for
 Super simple, easily deployable script that anyone can use to set up their Assassins games whether it be for a club,
 a camp, or a class. 
 
-### Prerequisites
+## Prerequisites
 
 Make sure you have Python3 installed. If you don't have it installed, you can find a guide here: 
 http://docs.python-guide.org/en/latest/starting/install3/osx/
@@ -44,6 +44,16 @@ password = "yourrealpasswordhere"
 To run, just enter **python assassins.py** into terminal and watch as all your members are slowly emailed and assigned.
 
 ## Troubleshooting
+
+Here is a list of problems you may run into. If you are a developer, feel free to send me a push request with edits on this section if you run into different kinds of problems that would be good for FAQ!
+
+### Authentication does not work
+
+You entered in your email correctly and everything, but it still won't let you authenticate :(. The key here is to go to your email provider's settings and you must allow low-security applications to access your mailbox. Additionally, you may have to turn on other functions/disable some security functions in your emailer to successfully authenticate through the python script.
+
+### You are not using Gmail
+
+If you are not using gmail, you will need to change the SMTP server settings on line 34 of assassins.py. You need to find the necessary host and port values of your email service provider (a quick google) and replace line 34 accordingly. 
 
 
 ## Contributing
